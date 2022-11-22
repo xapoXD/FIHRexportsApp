@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+
+    <h1 class="display-2">Export to FIHR web application</h1>
+
+</div>
+
+
+<div class="text-left">
+    
+    <h1>Step 1.</h1>
+    <p>Enter source of information</p>
+
+    <INPUT id="oFile" type="file" runat="server" NAME="oFile">
+
+
+    <asp:button id="btnUpload" type="submit" text="Upload" runat="server"></asp:button>
+
+    <asp:Panel ID="frmConfirmation" Visible="False" Runat="server">
+    <asp:Label id="lblUploadResult" Runat="server"></asp:Label>
+</asp:Panel>
+
+
+</div>
+

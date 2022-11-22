@@ -1,0 +1,70 @@
+﻿@page
+@model FIHRexportsApp.Pages.WizardModel
+
+
+
+	
+<div class="text-left">
+    
+    <h1>Step 1.</h1>
+    <p>Enter source of informationeeeeee</p>
+
+    <INPUT id="oFile" type="file" runat="server" NAME="oFile">
+
+
+    <asp:button id="btnUpload" type="submit" text="Upload" runat="server"></asp:button>
+
+    <asp:Panel ID="frmConfirmation" Visible="False" Runat="server">
+    <asp:Label id="lblUploadResult" Runat="server"></asp:Label>
+</asp:Panel>
+
+
+</div>
+
+
+<div> 
+
+    <p> 
+    @Model.file
+    </p>
+
+       <asp:button class="offset-sm-11 btn-primary" style="color:green" >KLIK</asp:button>
+
+</div>
+
+
+ 
+<h1>Wecome to Calculator poopo Page</h1><br />
+ 
+<form method="post">
+    Enter 1st Number : <input name="Text1" type="text" /> <br /><br />
+    Enter 2nd Number : <input name="Text2" type="text" /> <br /><br />
+ 
+    Enter File : <INPUT id="oFile" type="file" runat="server" NAME="oFile" > <br /><br />
+
+    <label for="fname">FIRST NAME:  </label> <br>
+    <input type="text" id="fname" name="firstname"> &nbsp;&nbsp;&nbsp;
+
+    <input type="submit" value="submit" > <br> <br>
+
+
+
+
+
+    <input type="submit" value="+" formaction="Add" /> &nbsp;&nbsp;&nbsp;
+    <input type="submit" value="-" formaction="Minus" /> &nbsp;&nbsp;&nbsp;
+    <input type="submit" value="x" formaction="Multiply" /> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+    <input type="submit" value=".php" formaction="Divide" /> &nbsp;&nbsp;&nbsp;
+</form>
+ 
+<h2 style="color:crimson; background-color:darksalmon; padding:10px;">
+
+</h2>
+
+
+
+
+
+
+
+
